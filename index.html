@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Game</title>
+    <style>
+        /* Estilo Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.start-screen {
+  text-align: center;
+  background-color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+    </style>
+
+</head>
+
+<body>
+
+<div class="start-screen">
+    <h1>Welcome to the Typing Game!</h1>
+    <p>Destroy the words before they reach the bottom of the screen.</p>
+    <button id="startButton">Start Game</button>
+</div>
+
+  <script >
+    document.getElementById('startButton').addEventListener('click', function() {
+    window.location.href = 'filhos/pagina_segunda.html';  // Redireciona para o jogo
+});
+
+  </script>
+</body>
+</html>
