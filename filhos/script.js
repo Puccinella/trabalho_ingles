@@ -130,7 +130,7 @@ function endGame(won = false) {
     // Tela de derrota
     const gameOverMessage = document.createElement('div');
     gameOverMessage.classList.add('game-over-message');
-    gameOverMessage.innerHTML = `<h2 style="color: red;">Você Perdeu!</h2>`;
+    gameOverMessage.innerHTML = `<h2 style="color: red;">You Lose!</h2>`;
     gameOverMessage.style.position = 'absolute';
     gameOverMessage.style.top = '50%';
     gameOverMessage.style.left = '50%';
